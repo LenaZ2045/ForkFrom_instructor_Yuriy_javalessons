@@ -13,6 +13,16 @@ public class PartyApp {
         Guest[] guests = {alex, oleg, alla, maria, child, nik};
 
         for (Guest guest : guests) {
+             if(guest instanceof Man) {
+                 Man guestMan = (Man) guest;
+                 guestMan.printHello();
+
+             }
+             guest.printGreetings();
+        }
+
+
+        for (Guest guest : guests) {
             guest.printGreetings();
         }
 

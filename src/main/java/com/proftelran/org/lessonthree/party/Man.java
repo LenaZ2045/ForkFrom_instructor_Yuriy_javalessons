@@ -10,4 +10,9 @@ public class Man extends Guest implements DrinkAlcohol{
     public void drink() {
         System.out.println("I am " + super.getName() + " and I want to drink");
     }
+
+    public void printHello() {
+        System.out.println("Hello I am man");
+    }
+
 }
