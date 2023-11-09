@@ -6,6 +6,10 @@ public class BinaryTree {
 
     private Node root;
 
+    public Node getRoot() {
+        return root;
+    }
+
     public void insert(int key, String value) {  // 1, 2, 3, 4
         Node newNode = new Node(key, value); // 1 , 2, 3 , 4
         if (root == null) { //  if tree doesn't exist
