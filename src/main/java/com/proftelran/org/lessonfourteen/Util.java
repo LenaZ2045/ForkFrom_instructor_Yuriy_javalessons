@@ -9,7 +9,7 @@ public class Util {
         if (source < size) {
             do {
                 for (int dest : graph.getAdjacencyList().get(source)) {
-                    System.out.println("[" + source + " -> " + dest + "]");
+                    System.out.print("[" + source + " -> " + dest + "]");
                 }
                 System.out.println();
                 source++;
