@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 public class TestPredicate {
 
@@ -32,6 +33,10 @@ public class TestPredicate {
         List<User> oldUsers = collect(users, ageUser);
         System.out.println("Old users " + oldUsers);
 
+        //NEXT
+        List<User> collect = users.stream()
+                .filter(user -> user.getAge() > 30)
+                .collect(Collectors.toList());
     }
 
     private static List<User> collect(List<User> users, Predicate<User> filter) {
