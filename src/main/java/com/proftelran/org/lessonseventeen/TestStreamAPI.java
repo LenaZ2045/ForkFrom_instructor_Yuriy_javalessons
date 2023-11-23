@@ -20,6 +20,7 @@ public class TestStreamAPI {
         // 5. distinct() - only unique
         // 6. peek(consumer) - make action for each element
         // 7. map(Function) - convert one element to other
+        // 8. flatmap - unpack collection
 
         //Terminal
         // 1. count() - count of elements in stream
